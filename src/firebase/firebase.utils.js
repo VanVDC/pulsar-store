@@ -44,7 +44,7 @@ export const convertCollectionsSnapshotToMap = collections => {
       items
     };
   });
-  //setting the key to array to turn into an object. Data normalization
+  //setting the key to our object and turning it into an object data. Data normalization
   return transformedCollection.reduce((accumulator, collection) => {
     accumulator[collection.title.toLowerCase()] = collection;
     return accumulator;
