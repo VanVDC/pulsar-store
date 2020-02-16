@@ -26,6 +26,7 @@ class ShopPage extends React.Component {
 
   componentDidMount() {
     const { updateCollections } = this.props;
+
     const collectionRef = firestore.collection("collection");
 
     this.unsubscribeFromSnapshot = collectionRef.onSnapshot(async snapshot => {
@@ -34,6 +35,24 @@ class ShopPage extends React.Component {
 
       this.setState({ loading: false });
     });
+
+    //+++++Promises style++++++ still using collection reference
+    // collectionRef.get().then(
+    //   snapshot => {
+    //   const collectionMap = convertCollectionsSnapshotToMap(snapshot);
+    //   updateCollections(collectionMap);
+
+    //   this.setState({ loading: false });
+    // }
+    // )
+
+    // +++++++fetch style api+++++
+
+    // fetch(
+    //   "https://firestore.googleapis.com/v1/projects/pulsar-fb2aa/databases/(default)/documents/collection"
+    // )
+    //   .then(response => response.json())
+    //   .then(collection => console.log(collection));
   }
   render() {
     const { match } = this.props;
