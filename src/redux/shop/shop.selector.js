@@ -25,7 +25,7 @@ export const selectIsCollectionFetching = createSelector(
   shop => shop.isFetching
 );
 
-//return true or false !! if there is data in the collections.
+//return true or false, use !! to turn data into boolean.
 export const selectIsCollectionsLoaded = createSelector(
   [selectShop],
 
