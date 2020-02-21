@@ -5,7 +5,7 @@ import UserActionTypes from "./user.types";
 import {
   SignInFailure,
   SignInSuccess,
-  signOutSucess,
+  signOutSuccess,
   signOutFailure
 } from "./user.actions";
 
@@ -59,7 +59,7 @@ export function* isUserAuthenticated() {
 export function* signOut() {
   try {
     yield auth.signOut();
-    yield put(signOutSucess);
+    yield put(signOutSuccess);
   } catch (error) {
     yield put(signOutFailure(error));
   }
