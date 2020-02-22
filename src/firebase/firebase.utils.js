@@ -15,6 +15,7 @@ const firebaseConfig = {
 
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
+
 //get current user session info
 export const getCurrentUser = () => {
   return new Promise((resolve, reject) => {
