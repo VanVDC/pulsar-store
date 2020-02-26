@@ -12,8 +12,6 @@
 # production
 /client/build
 
-#firebase
-/client/src/firebase/firebase.utils.js
 
 # misc
 /client/.DS_Store
