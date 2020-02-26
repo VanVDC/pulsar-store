@@ -13,7 +13,7 @@
 /client/build
 
 #firebase
-./src/firebase/firebase.utils.js
+/client/src/firebase/firebase.utils.js
 
 # misc
 /client/.DS_Store
