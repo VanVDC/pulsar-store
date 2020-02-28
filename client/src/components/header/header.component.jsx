@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { ReactComponent as Logo } from "../../assets/crown.svg";
 import { connect } from "react-redux";
 
@@ -17,7 +16,6 @@ import {
   HeaderContainer,
   LogoContainer,
   OptionsContainer,
-  OptionDiv,
   OptionLink
 } from "./header.styles.jsx";
 const Header = ({ currentUser, hidden, signOutStart }) => (
@@ -31,7 +29,9 @@ const Header = ({ currentUser, hidden, signOutStart }) => (
       <OptionLink to="/contact">CONTACT</OptionLink>
 
       {currentUser ? (
-        <OptionDiv onClick={signOutStart}>SIGN OUT</OptionDiv>
+        <OptionLink as="div" onClick={signOutStart}>
+          SIGN OUT
+        </OptionLink>
       ) : (
         <OptionLink to="/signin">SIGN IN</OptionLink>
       )}
