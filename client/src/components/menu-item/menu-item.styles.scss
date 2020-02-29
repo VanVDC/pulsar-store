@@ -22,6 +22,7 @@
     height: 100%;
     width: 100%;
     background-size: cover;
+    background-position: center;
   }
 
   &.large {
@@ -40,6 +41,9 @@
       opacity: 0.9;
     }
   }
+  &:first-child {
+    margin-right: 7.5px;
+  }
 
   .content {
     height: 90px;
@@ -52,6 +56,7 @@
     position: absolute;
     background: white;
     opacity: 0.7;
+    position: absolute;
 
     .title {
       font-weight: bold;
@@ -68,5 +73,22 @@
 
   @media screen and (max-width: 800px) {
     height: 200px;
+
+    .content {
+      height: 50px;
+      padding: 0 10px;
+
+      .title {
+        margin-bottom: 2px;
+        font-size: 10px;
+      }
+
+      .subtitle {
+        font-size: 10px;
+      }
+    }
+    &.large {
+      height: 200px;
+    }
   }
 }

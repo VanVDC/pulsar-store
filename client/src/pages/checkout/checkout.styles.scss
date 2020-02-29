@@ -39,4 +39,15 @@
     font-size: 20px;
     color: red;
   }
+  @media screen and (max-width: 800px) {
+    width: 70vw;
+    .header-block {
+      text-transform: capitalize;
+      width: 22%;
+
+      &:last-child {
+        width: 12%;
+      }
+    }
+  }
 }
