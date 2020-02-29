@@ -14,7 +14,7 @@
     margin-bottom: 5px;
   }
 
-  .custom-button {
+  button {
     width: 80%;
     opacity: 0.7;
     position: absolute;
@@ -46,6 +46,26 @@
 
     .price {
       width: 10%;
+    }
+  }
+
+  @media screen and (max-width: 800px) {
+    width: 40vw;
+
+    &:hover {
+      .image {
+        opacity: unset;
+      }
+      .custom-button {
+        opacity: unset;
+      }
+    }
+
+    button {
+      display: block;
+      opacity: 0.9;
+      min-width: unset;
+      padding: 0 10px;
     }
   }
 }

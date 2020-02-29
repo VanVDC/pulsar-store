@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import "./App.css";
 import { Switch, Route, Redirect } from "react-router-dom";
 
 import { createStructuredSelector } from "reselect";
@@ -13,6 +12,8 @@ import ShopPage from "./pages/shop/shop.page";
 import Header from "./components/header/header.component";
 import CheckoutPage from "./pages/checkout/checkout.component";
 import SignInAndSignUpPage from "./pages/sign-in-and-sign-up/sign-in-and-signup.component";
+
+import { GlobalStyle } from "./global.styles";
 
 class App extends Component {
   // unsubscribeFromAuth = null;
@@ -28,6 +29,7 @@ class App extends Component {
   render() {
     return (
       <div>
+        <GlobalStyle />
         <Header />
         <Switch>
           <Route exact path="/" component={HomePage} />
