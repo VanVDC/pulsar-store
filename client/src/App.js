@@ -21,16 +21,11 @@ const SignInAndSignUpPage = lazy(() =>
 );
 
 class App extends React.Component {
-  // unsubscribeFromAuth = null;
-
   componentDidMount() {
     const { checkUserSession } = this.props;
     checkUserSession();
   }
 
-  // componentWillUnmount() {
-  //   this.unsubscribeFromAuth();
-  // }
   render() {
     return (
       <div>
