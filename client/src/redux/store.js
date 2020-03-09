@@ -2,10 +2,10 @@ import { createStore, applyMiddleware } from "redux";
 import { persistStore } from "redux-persist";
 import createSagaMiddleware from "redux-saga";
 
-import rootReducers from "./root-reducers";
-import rootSaga from "./root-saga";
+import rootReducers from "./root-reducers"; //all the reducers togerther
+import rootSaga from "./root-saga"; //all teh sagas together
 
-import logger from "redux-logger";
+import logger from "redux-logger"; //log out redux state and actions
 
 const sagaMiddleware = createSagaMiddleware();
 
