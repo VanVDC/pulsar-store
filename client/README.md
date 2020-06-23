@@ -28,10 +28,11 @@ git clone: https://github.com/VanVDC/pulsar-store.git
 - Create an `.env` files for the client.
 - Add your firebase config in the client(firebase.utils.js)
 
-- firebase.utils.js
+* .env
 
 ```
-REACT_APP_GOOGLE_AUTH_DOMAIN=""
+REACT_APP_GOOGLE_API_KEY="Your key"
+REACT_APP_GOOGLE_AUTH_DOMAIN="  "
 REACT_APP_GOOGLE_DATABASE_URL=""
 REACT_APP_GOOGLE_PROJECT_ID=""
 REACT_APP_GOOGLE_STORAGE_BUCKET=""

@@ -23,10 +23,10 @@ git clone: https://github.com/VanVDC/pulsar-store.git
 - Create an `.env` files for server.
 - Add your Stripe key for the server(server.js)
 
-- server.js
+* .env
 
 ```
-const stripe = require("stripe")(process.env.STRIPE_SECRET_KEY);
+STRIPE_SECRET_KEY=your-key-here
 ```
 
 - `npm dev` to start the client and server together
