@@ -1,3 +1,74 @@
+# Pulsar's Shop client side
+
+The clothing website allowing user to sign to shop.
+
+#### Features:
+
+- Login/Logout Functionality
+- Add items
+  <!-- ![Create new student](./public/createStudent.gif) -->
+- Increase or decrease items
+  <!-- ![Create Invoice](./public/createInvoice.gif) -->
+  <!-- ![Remove items](./public/remove.gif) -->
+- Auto calculate the total total price
+  <!-- ![PDF](./public/pdf.gif) -->
+- Use Stripe payment system
+
+#### Instructions:
+
+- Clone with HTTPS
+
+```
+git clone: https://github.com/VanVDC/pulsar-store.git
+```
+
+- `npm install`
+- Create a firebase account [Firebase](https://firebase.google.com/)
+- Create an `.env` files for the client and server.
+- Add your firebase config in the client(firebase.utils.js)
+- Add your Stripe key for the server(server.js)
+
+- firebase.utils.js
+
+```
+REACT_APP_GOOGLE_AUTH_DOMAIN=""
+REACT_APP_GOOGLE_DATABASE_URL=""
+REACT_APP_GOOGLE_PROJECT_ID=""
+REACT_APP_GOOGLE_STORAGE_BUCKET=""
+REACT_APP_GOOGLE_MESSAGING_SENDER_ID=""
+REACT_APP_GOOGLE_APP_ID=""
+REACT_APP_GOOGLE_MEASUREMENT_ID=""
+```
+
+- server.js
+
+```
+const stripe = require("stripe")(process.env.STRIPE_SECRET_KEY);
+```
+
+- `npm dev` to start the client and server
+- Visit `localhost:3000`
+
+#### Demo:
+
+- [Demo](pulsar-live.herokuapp.com/)
+- Login
+
+```
+user: tom@gmail.com
+pass: 123456
+```
+
+#### Built With:
+
+- [Create-react-app](https://github.com/facebook/create-react-app)
+- [Node](https://nodejs.org/en/)
+- [React](https://github.com/facebook/react/)
+- [Redux](https://github.com/reactjs/redux)
+- [Firebase](https://firebase.google.com/)
+- [Styled-components](https://github.com/styled-components/styled-components)
+- [Stripe](https://github.com/stripe/stripe-node)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
