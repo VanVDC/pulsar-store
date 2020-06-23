@@ -1,19 +1,15 @@
-# Pulsar's Shop client side
+# Pulsar's Shop Server side
 
 The clothing website allowing user to sign to shop.
 
-### Client with react js
+#### Server with Node js
+
+- Stripe allows individuals to make payments and store to receive payments over the internet. Stripe requires backend to hide the Stripe's key.
+- Express backend fremework
 
 #### Features:
 
-- Login/Logout Functionality
-- Add items
-  <!-- ![Create new student](./public/createStudent.gif) -->
-- Increase or decrease items
-  <!-- ![Create Invoice](./public/createInvoice.gif) -->
-  <!-- ![Remove items](./public/remove.gif) -->
-- Auto calculate the total total price
-  <!-- ![PDF](./public/pdf.gif) -->
+- Use Stripe payment system
 
 #### Instructions:
 
@@ -24,23 +20,17 @@ git clone: https://github.com/VanVDC/pulsar-store.git
 ```
 
 - `npm install`
-- Create a firebase account [Firebase](https://firebase.google.com/)
-- Create an `.env` files for the client.
-- Add your firebase config in the client(firebase.utils.js)
+- Create an `.env` files for server.
+- Add your Stripe key for the server(server.js)
 
-- firebase.utils.js
+- server.js
 
 ```
-REACT_APP_GOOGLE_AUTH_DOMAIN=""
-REACT_APP_GOOGLE_DATABASE_URL=""
-REACT_APP_GOOGLE_PROJECT_ID=""
-REACT_APP_GOOGLE_STORAGE_BUCKET=""
-REACT_APP_GOOGLE_MESSAGING_SENDER_ID=""
-REACT_APP_GOOGLE_APP_ID=""
-REACT_APP_GOOGLE_MEASUREMENT_ID=""
+const stripe = require("stripe")(process.env.STRIPE_SECRET_KEY);
 ```
 
-- `npm start` to start the client
+- `npm dev` to start the client and server together
+- Visit `localhost:3000`
 
 #### Demo:
 
@@ -54,11 +44,9 @@ pass: 123456
 
 #### Built With:
 
-- [Create-react-app](https://github.com/facebook/create-react-app)
-- [React](https://github.com/facebook/react/)
-- [Redux](https://github.com/reactjs/redux)
-- [Firebase](https://firebase.google.com/)
-- [Styled-components](https://github.com/styled-components/styled-components)
+- [Node](https://nodejs.org/en/)
+- [Express](https://github.com/expressjs/express)
+- [Stripe](https://github.com/stripe/stripe-node)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
