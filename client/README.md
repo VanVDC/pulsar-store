@@ -26,9 +26,7 @@ git clone: https://github.com/VanVDC/pulsar-store.git
 - `npm install`
 - Create a firebase account [Firebase](https://firebase.google.com/)
 - Create an `.env` files for the client.
-- Add your firebase config in the client(firebase.utils.js)
-
-* .env
+- Add your firebase's config in the env
 
 ```
 REACT_APP_GOOGLE_API_KEY="Your key"
