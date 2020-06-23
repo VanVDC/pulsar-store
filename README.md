@@ -23,7 +23,7 @@ git clone: https://github.com/VanVDC/pulsar-store.git
 - Create an `.env` files for server.
 - Add your Stripe key for the server(server.js)
 
-* .env
+- env
 
 ```
 STRIPE_SECRET_KEY=your-key-here
