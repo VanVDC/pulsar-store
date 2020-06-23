@@ -13,6 +13,7 @@ const firebaseConfig = {
   measurementId: process.env.REACT_APP_GOOGLE_MEASUREMENT_ID,
 };
 
+console.log("firebasecon", process.env.REACT_APP_GOOGLE_API_KEY);
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 
