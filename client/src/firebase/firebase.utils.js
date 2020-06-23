@@ -3,14 +3,14 @@ import "firebase/auth";
 import "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyACYiTseI4sGGmOo4hmENrcPGTtUOPj1qM",
-  authDomain: "pulsar-fb2aa.firebaseapp.com",
-  databaseURL: "https://pulsar-fb2aa.firebaseio.com",
-  projectId: "pulsar-fb2aa",
-  storageBucket: "pulsar-fb2aa.appspot.com",
-  messagingSenderId: "366397027551",
-  appId: "1:366397027551:web:db0ddcd5116e44f510a56a",
-  measurementId: "G-X5K9M0Z0JY"
+  apiKey: process.env.REACT_APP_GOOGLE_API_KEY,
+  authDomain: process.env.REACT_APP_GOOGLE_AUTH_DOMAIN,
+  databaseURL: process.env.REACT_APP_GOOGLE_DATABASE_URL,
+  projectId: process.env.REACT_APP_GOOGLE_PROJECT_ID,
+  storageBucket: process.env.REACT_APP_GOOGLE_STORAGE_BUCKET,
+  messagingSenderId: process.env.REACT_APP_GOOGLE_MESSAGING_SENDER_ID,
+  appId: process.env.REACT_APP_GOOGLE_APP_ID,
+  measurementId: process.env.REACT_APP_GOOGLE_MEASUREMENT_ID,
 };
 
 // Initialize Firebase
@@ -19,7 +19,7 @@ firebase.initializeApp(firebaseConfig);
 //get current user session info
 export const getCurrentUser = () => {
   return new Promise((resolve, reject) => {
-    const unsubscribe = auth.onAuthStateChanged(userAuth => {
+    const unsubscribe = auth.onAuthStateChanged((userAuth) => {
       unsubscribe();
       resolve(userAuth);
     }, reject);
@@ -34,7 +34,7 @@ export const addCollectionAndDocuments = async (collectionKey, objectToAdd) => {
   const collectionRef = firestore.collection(collectionKey);
 
   const batch = firestore.batch();
-  objectToAdd.forEach(obj => {
+  objectToAdd.forEach((obj) => {
     const newDocRef = collectionRef.doc();
     batch.set(newDocRef, obj);
   });
@@ -44,15 +44,15 @@ export const addCollectionAndDocuments = async (collectionKey, objectToAdd) => {
 
 //collection function for snapshot. Turning arrays to object
 
-export const convertCollectionsSnapshotToMap = collections => {
-  const transformedCollection = collections.docs.map(doc => {
+export const convertCollectionsSnapshotToMap = (collections) => {
+  const transformedCollection = collections.docs.map((doc) => {
     const { title, items } = doc.data();
 
     return {
       routeName: encodeURI(title.toLowerCase()),
       id: doc.id,
       title,
-      items
+      items,
     };
   });
   //setting the key to our object and turning it into an object data. Data normalization
@@ -76,7 +76,7 @@ export const createUserProfileDocument = async (userAuth, otherData) => {
         displayName,
         email,
         createdAt,
-        ...otherData
+        ...otherData,
       });
     } catch (error) {
       console.log("create user profile document: ", error.message);
@@ -87,7 +87,7 @@ export const createUserProfileDocument = async (userAuth, otherData) => {
 
 export const googleProvider = new firebase.auth.GoogleAuthProvider();
 googleProvider.setCustomParameters({
-  prompt: "select_account"
+  prompt: "select_account",
 });
 
 export const signInWithGoogle = () => auth.signInWithPopup(googleProvider);
