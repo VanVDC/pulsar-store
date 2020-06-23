@@ -1,6 +1,6 @@
 # Pulsar's Shop client side
 
-The clothing website allowing user to sign to shop.
+The clothing website allowing user to do online shopping.
 
 ### Client with react js
 

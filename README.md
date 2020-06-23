@@ -1,6 +1,6 @@
 # Pulsar's Shop Server side
 
-The clothing website allowing user to sign to shop.
+The clothing website allowing user to do online shopping.
 
 #### Server with Node js
 
