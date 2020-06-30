@@ -1,38 +1,38 @@
 const INTIAL_STATE = {
   sections: [
     {
-      title: "hats",
-      imageUrl: "https://i.ibb.co/cvpntL1/hats.png",
+      title: "meats",
+      imageUrl: "https://i.ibb.co/pnV01X4/steak2.jpg",
       id: 1,
-      linkUrl: "shop/hats"
+      linkUrl: "shop/meats",
     },
     {
-      title: "jackets",
-      imageUrl: "https://i.ibb.co/px2tCc3/jackets.png",
+      title: "veggies",
+      imageUrl: "https://i.ibb.co/njWfSB4/avacodo.jpg",
       id: 2,
-      linkUrl: "shop/jackets"
+      linkUrl: "shop/veggies",
     },
     {
-      title: "sneakers",
-      imageUrl: "https://i.ibb.co/0jqHpnp/sneakers.png",
+      title: "snacks",
+      imageUrl: "https://i.ibb.co/QkdddNd/main.jpg",
       id: 3,
-      linkUrl: "shop/sneakers"
+      linkUrl: "shop/snacks",
     },
     {
-      title: "womens",
-      imageUrl: "https://i.ibb.co/GCCdy8t/womens.png",
+      title: "flours",
+      imageUrl: "https://i.ibb.co/5kgZ27Y/flour2.jpg",
       size: "large",
       id: 4,
-      linkUrl: "shop/womens"
+      linkUrl: "shop/flours",
     },
     {
-      title: "mens",
-      imageUrl: "https://i.ibb.co/R70vBrQ/men.png",
+      title: "oils",
+      imageUrl: "https://i.ibb.co/WGgnmcj/oil.jpg",
       size: "large",
       id: 5,
-      linkUrl: "shop/mens"
-    }
-  ]
+      linkUrl: "shop/oils",
+    },
+  ],
 };
 
 const directoryReducer = (state = INTIAL_STATE, action) => {
