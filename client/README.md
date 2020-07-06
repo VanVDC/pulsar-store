@@ -40,7 +40,7 @@ REACT_APP_GOOGLE_MEASUREMENT_ID=""
 
 #### Demo:
 
-- [Demo](pulsar-live.herokuapp.com/)
+- [Demo](https://pulsar-live.herokuapp.com/)
 - Login
 
 ```
