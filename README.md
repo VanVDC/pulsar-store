@@ -2,6 +2,8 @@
 
 An online grocery store allowing user to order low carbs and keto products.
 
+- [Client side](https://github.com/VanVDC/pulsar-store/tree/master/client)
+
 #### Server with Node js
 
 - Stripe allows individuals to make payments and store to receive payments over the internet. Stripe requires backend to hide the Stripe's key.
