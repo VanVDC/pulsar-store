@@ -24,7 +24,7 @@ git clone: https://github.com/VanVDC/pulsar-store.git
 - `npm install`
 - Create an `.env` files for server.
 - Create a Stripe account and get the key for the server(server.js)
-- add key in teh env file here
+- add key in the env file here
 
 ```
 STRIPE_SECRET_KEY=your-key-here
