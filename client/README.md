@@ -10,7 +10,7 @@ The clothing website allows user to do online shopping.
 - Add items
 - Increase or decrease items
 - Auto calculate the total total price
-  ![demo](./assets/pulsar.gif)
+  ![demo](./src/assets/pulsar.gif)
 
 #### Instructions:
 
