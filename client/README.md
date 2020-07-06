@@ -1,6 +1,6 @@
 # Pulsar's Shop client side
 
-The clothing website allows user to do online shopping.
+An online grocery store allowing user to order low carbs and keto products.
 
 ### Client with react js
 
