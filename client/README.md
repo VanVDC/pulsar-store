@@ -8,12 +8,9 @@ The clothing website allows user to do online shopping.
 
 - Login/Logout Functionality
 - Add items
-  <!-- ![Create new student](./public/createStudent.gif) -->
 - Increase or decrease items
-  <!-- ![Create Invoice](./public/createInvoice.gif) -->
-  <!-- ![Remove items](./public/remove.gif) -->
 - Auto calculate the total total price
-  <!-- ![PDF](./public/pdf.gif) -->
+  ![demo](./assets/pulsar.gif)
 
 #### Instructions:
 
