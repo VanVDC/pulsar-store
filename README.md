@@ -1,6 +1,6 @@
 # Pulsar's Shop server side
 
-The clothing website allows user to do online shopping.
+An online grocery store allowing user to order low carbs and keto products.
 
 #### Server with Node js
 
