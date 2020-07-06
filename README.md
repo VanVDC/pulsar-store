@@ -39,7 +39,7 @@ STRIPE_SECRET_KEY=your-key-here
 
 #### Demo:
 
-- [Demo](pulsar-live.herokuapp.com/)
+- [Demo](https://pulsar-live.herokuapp.com/)
 - Login
 
 ```
