@@ -1,6 +1,8 @@
 # Pulsar's Shop server side
 
-The clothing website allows user to do online shopping.
+An online grocery store allowing user to order low carbs and keto products.
+
+- [Client side](https://github.com/VanVDC/pulsar-store/tree/master/client)
 
 #### Server with Node js
 
@@ -22,7 +24,7 @@ git clone: https://github.com/VanVDC/pulsar-store.git
 - `npm install`
 - Create an `.env` files for server.
 - Create a Stripe account and get the key for the server(server.js)
-- add key in teh env file here
+- add key in the env file here
 
 ```
 STRIPE_SECRET_KEY=your-key-here
@@ -39,7 +41,7 @@ STRIPE_SECRET_KEY=your-key-here
 
 #### Demo:
 
-- [Demo](pulsar-live.herokuapp.com/)
+- [Demo](https://pulsar-live.herokuapp.com/)
 - Login
 
 ```

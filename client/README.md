@@ -1,6 +1,8 @@
 # Pulsar's Shop client side
 
-The clothing website allows user to do online shopping.
+An online grocery store allowing user to order low carbs and keto products.
+
+- [Server side](https://github.com/VanVDC/pulsar-store)
 
 ### Client with react js
 
@@ -40,7 +42,7 @@ REACT_APP_GOOGLE_MEASUREMENT_ID=""
 
 #### Demo:
 
-- [Demo](pulsar-live.herokuapp.com/)
+- [Demo](https://pulsar-live.herokuapp.com/)
 - Login
 
 ```
