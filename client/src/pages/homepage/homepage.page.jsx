@@ -4,10 +4,10 @@ import Title from '../../components/title/Title';
 import './homepage.styles.scss';
 
 const HomePage = () => (
-  <HomePageContainer>
+  <div className='homepage'>
     <Title />
     <Directory />
-  </HomePageContainer>
+  </div>
 );
 
 export default HomePage;
