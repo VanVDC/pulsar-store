@@ -44,27 +44,27 @@ pass: 123456
 
 ## Technologies
 ### Backend Development 
- "Node.js"
-"body-parser" - version "1.18.3"
-"compression" - version "1.7.4"
-"cors" - version "2.8.5"
-"dotenv" - version "7.0.0"
-"express" - version "4.16.4"
-"stripe" - version "6.28.0"
+ - "Node.js"
+- "body-parser" - version "1.18.3"
+- "compression" - version "1.7.4"
+- "cors" - version "2.8.5"
+- "dotenv" - version "7.0.0"
+- "express" - version "4.16.4"
+- "stripe" - version "6.28.0"
 
 ### Frontend Development 
-  "axios" - version "0.19.2"
-   "firebase" - version "7.7.0"
-   "node-sass" - version "4.13.0"
-   "react" - version "16.12.0"
-    "react-dom"  - version "16.12.0"
-    "react-redux" - version "7.1.3"
-    "react-router-dom" - version "5.1.2"
-    "react-scripts"  - version "3.0.0"
-    "react-stripe-checkout" - version "2.6.3"
-    "redux" - version  "4.0.5"
-    "redux-logger" - version "3.0.6"
-    "redux-thunk" - version "2.3.0"
+  - "axios" - version "0.19.2"
+  - "firebase" - version "7.7.0"
+  - "node-sass" - version "4.13.0"
+  - "react" - version "16.12.0"
+  - "react-dom"  - version "16.12.0"
+  - "react-redux" - version "7.1.3"
+  -  "react-router-dom" - version "5.1.2"
+  -  "react-scripts"  - version "3.0.0"
+  - "react-stripe-checkout" - version "2.6.3"
+   - "redux" - version  "4.0.5"
+   - "redux-logger" - version "3.0.6"
+   - "redux-thunk" - version "2.3.0"
 
 
 
