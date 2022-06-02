@@ -48,3 +48,5 @@ STRIPE_SECRET_KEY=your-key-here
 user: tom@gmail.com
 pass: 123456
 ```
+
+The inspiration for the Pulsar store came as I was on my keto diet and shopping for keto products at the grocery store. Keto shopping took me a while because not many stores are keto-friendly, so I decided to create a store to sell only keto products.  
