@@ -18,7 +18,7 @@
 
 Pulsar store is an easy-to-use e-commerce store that allows shoppers to buy keto-friendly products. It contains all the e-commerce essentials for adding products and using Stripe and personal credit cards as payment systems.
 
-<div align="center">EV-Wheels </div>
+<div align="center">Pulsar </div>
 <br/>
 <div align="center">
 <kbd>
