@@ -1,6 +1,6 @@
 # Pulsar's Shop server side
 
-An online grocery store allowing user to order low carbs and keto products.
+An online grocery store allowing users to order low carbs and keto products.
 
 - [Client side](https://github.com/VanVDC/pulsar-store/tree/master/client)
 
