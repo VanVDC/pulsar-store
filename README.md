@@ -172,7 +172,7 @@ The inspiration for the Pulsar store came as I was on my keto diet and shopping 
 
 ## Contact
 
-Created by [Van Vy](vanby.com)
+Created by [Van Vy](https://vanbvy.com/)
 Feel free to contact me for any questions!
 
 ## License
