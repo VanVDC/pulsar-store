@@ -1,4 +1,4 @@
-# EV-Wheels Store
+# pulsar-store
 
 > An online grocery store allowing users to order low carbs and keto products.
 
